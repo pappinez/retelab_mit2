@@ -52,7 +52,7 @@ public class TrainControllerImpl implements TrainController {
 		task = new TimerTask() {
 			@Override
 			public void run() {
-				followSpeed();
+				this.followSpeed();
 			}
 		};
 		timer.schedule(task, 0, 1000);
